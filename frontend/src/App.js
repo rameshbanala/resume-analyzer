@@ -5,7 +5,6 @@ import PastResumesTable from "./components/PastResumesTable";
 import "./App.css";
 
 function App() {
-  const [activeTab, setActiveTab] = useState("upload");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const tabs = [

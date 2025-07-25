@@ -40,7 +40,7 @@ Before running this application, ensure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/resume-analyzer.git
+git clone https://github.com/rameshbanala/resume-analyzer.git
 cd resume-analyzer
 ```
 
@@ -377,36 +377,6 @@ npm install
 - Verify environment variables are loaded
 - Test API endpoints directly with curl or Postman
 
-## 🚀 Deployment
-
-### **Production Deployment**
-
-**Backend Deployment (e.g., Heroku):**
-```bash
-# Add Heroku remote
-heroku create your-app-name
-
-# Set environment variables
-heroku config:set GOOGLE_API_KEY=your_key
-heroku config:set DB_USER=your_db_user
-
-# Deploy
-git push heroku main
-```
-
-**Frontend Deployment (e.g., Netlify):**
-```bash
-# Build for production
-npm run build
-
-# Deploy build folder to Netlify
-```
-
-**Database Deployment:**
-- Use managed PostgreSQL services (Heroku Postgres, AWS RDS, etc.)
-- Run migration scripts on production database
-- Configure connection pooling for production load
-
 ## 🤝 Contributing
 
 1. **Fork the repository**
@@ -425,7 +395,7 @@ npm run build
 
 ## 👨‍💻 Authors
 
-- **Your Name** - *Initial work* - [@yourusername](https://github.com/yourusername)
+- **Your Name** - *Initial work* - [@rameshbanala](https://github.com/rameshbanala)
 
 ## 🙏 Acknowledgments
 
@@ -437,8 +407,8 @@ npm run build
 
 ## 📞 Support
 
-For support, email your-email@example.com or create an issue in the GitHub repository.
+For support, email rameshbanalab@gmail.com or create an issue in the GitHub repository.
 
 
 
-**Built with ❤️ by [Your Name] | Powered by Google Gemini AI**
+**Built with ❤️ by Ramesh Banala | Powered by Google Gemini AI**
