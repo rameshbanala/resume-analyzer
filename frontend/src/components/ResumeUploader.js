@@ -18,7 +18,7 @@ const ResumeUploader = () => {
   const [dragActive, setDragActive] = useState(false);
   const fileInputRef = useRef(null);
 
-  const API_BASE_URL = process.env.REACT_APP_API_URL || "http://localhost:5000";
+  const API_BASE_URL = process.env.REACT_APP_API_URL;
 
   const handleFileSelect = (selectedFile) => {
     setError(null);
