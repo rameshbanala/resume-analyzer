@@ -12,7 +12,19 @@
   ],
   "routes": [
     {
-      "src": "/static/(.*)",
+      "src": "/static/js/(.*)",
+      "headers": {
+        "cache-control": "s-maxage=31536000,immutable"
+      }
+    },
+    {
+      "src": "/static/css/(.*)",
+      "headers": {
+        "cache-control": "s-maxage=31536000,immutable"
+      }
+    },
+    {
+      "src": "/static/media/(.*)",
       "headers": {
         "cache-control": "s-maxage=31536000,immutable"
       }
@@ -21,15 +33,5 @@
       "src": "/(.*)",
       "dest": "/index.html"
     }
-  ],
-  "env": {
-    "REACT_APP_API_URL": "@react_app_api_url",
-    "REACT_APP_VERSION": "@react_app_version"
-  },
-  "build": {
-    "env": {
-      "REACT_APP_API_URL": "@react_app_api_url",
-      "REACT_APP_VERSION": "@react_app_version"
-    }
-  }
+  ]
 }
