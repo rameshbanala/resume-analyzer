@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import { History, Upload, BarChart3, Menu, X } from "lucide-react";
+import { FileText, History, Upload, BarChart3, Menu, X } from "lucide-react";
 import ResumeUploader from "./components/ResumeUploader";
 import PastResumesTable from "./components/PastResumesTable";
 import "./App.css";
 
 function App() {
+  const [activeTab, setActiveTab] = useState("upload");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const tabs = [
@@ -29,12 +30,8 @@ function App() {
         <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-8">
           <div className="flex items-center justify-between h-14 sm:h-16">
             <div className="flex items-center space-x-2 sm:space-x-3">
-              <div className="p-1.5 sm:p-2 ">
-                <img
-                  src="logo_no_bg.png"
-                  className="h-10 w-10"
-                  alt="Logo Resume Analyzer"
-                />
+              <div className="p-1.5 sm:p-2 bg-primary-500 rounded-lg">
+                <FileText className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
               </div>
               <div>
                 <h1 className="text-lg sm:text-xl font-bold text-gray-900">
